@@ -5,7 +5,7 @@ import thirdCard from "../assets/3-1.png";
 
 export default function Welcome() {
   return (
-    <div className="Welcome text-black" id="Welcome">
+    <div id="Welcome" className="Welcome text-black">
       <div className="text-center">
         <h1 className="text-4xl font-semibold mt-16">
           Welcome to Touchstone Conservatories

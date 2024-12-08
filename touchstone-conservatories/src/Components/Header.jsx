@@ -46,7 +46,7 @@ function Header() {
             isSidebarOpen ? "hidden" : ""
           } space-x-10 text-lg text-cyan-700 hidden lg:flex md:text-md`}
         >
-          {["Home", "Welcome", "About", "Feedback"].map((item) => (
+          {["Home", "About", "Portfolio", "FAQ"].map((item) => (
             <li key={item} className="nav-item">
               <button>
                 <Link
@@ -114,7 +114,7 @@ function Header() {
           </svg>
         </button>
         <ul className="text-center text-2xl space-y-8">
-          {["Home", "Welcome", "About", "Feedback"].map((item) => (
+          {["Home", "About", "Portfolio", "FAQ"].map((item) => (
             <li key={item} className="py-2">
               <button>
                 <Link

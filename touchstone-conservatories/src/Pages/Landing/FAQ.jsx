@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FAQ() {
   return (
-    <section id="FAQ" className="text-center text-black mx-10 mb-40">
+    <section id="FAQ" className="text-center text-black mx-10 mb-20">
       <h1 className="text-cyan-700 text-center text-4xl mb-5 font-bold">
         Frequently Asked Questions
       </h1>

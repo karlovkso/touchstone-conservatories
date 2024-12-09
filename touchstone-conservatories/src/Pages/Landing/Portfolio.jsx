@@ -5,8 +5,8 @@ export default function Portfolio() {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const [carouselOffset, setCarouselOffset] = useState(0); // Track the carousel offset
-  const [nextClickCount, setNextClickCount] = useState(0); // Track the number of next button clicks
+  const [carouselOffset, setCarouselOffset] = useState(0);
+  const [nextClickCount, setNextClickCount] = useState(0);
   const intervalRef = useRef(null);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function Portfolio() {
 
   const goToPrevious = () => {
     setCarouselOffset((prevOffset) => Math.max(prevOffset - 8, 0));
-    setNextClickCount((prevCount) => Math.max(prevCount - 1, 0)); // Decrease next click count
+    setNextClickCount((prevCount) => Math.max(prevCount - 1, 0));
   };
 
   const goToNext = () => {
@@ -42,7 +42,7 @@ export default function Portfolio() {
       setCarouselOffset((prevOffset) =>
         Math.min(prevOffset + 8, images.length - 1)
       );
-      setNextClickCount((prevCount) => prevCount + 1); // Increase next click count
+      setNextClickCount((prevCount) => prevCount + 1);
     }
   };
 
@@ -115,6 +115,17 @@ export default function Portfolio() {
           ❯
         </button>
       </div>
+
+      <section className="flex items-center justify-center h-screen bg-white my-20">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/1DKLCAGSWmQ"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </section>
     </div>
   );
 }

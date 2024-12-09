@@ -1,42 +1,51 @@
 import React, { useState, useEffect } from "react";
 
 export default function About() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex] = useState(0);
   const carouselItems = [
+    {
+      name: "Charles Anthony",
+      rating: 5,
+      content:
+        "Chris and his team performed magic with the repair and rejuvenation of our 40-year old classic conservatory. The structure had been gradually fading and breaking down but Touchstone worked like mad to revive it to better than new. Chris faced several unforeseen challenges but he and his team were unfazed and came through with a brilliant result. We could not be happier. Highly recommend Touchstone Conservatories!",
+    },
     {
       name: "Susan Bottomley",
       rating: 5,
       content:
-        "Chris rescued our designed conservatory project from a no-go to a go-forward. From that point on Chris and his team achieved timeline goals. Chris’ communication about project progress was excellent as was his transparency concerning emerging difficulties.",
+        "Chris rescued our designed conservatory project from a no-go to a go-forward. From that point on Chris and his team achieved timeline goals. Chris' communication about project progress was excellent as was his transparency concerning  emerging difficulties. Onsite Chris and his team were hardworking and delightful to have around. Post construction they have been just as diligent and responsive. Overall we are thrilled with the beautiful materials and exacting process in building our conservatory. We highly recommend Chris for your project.",
     },
     {
-      name: "Hikaru Nakamura",
-      rating: 4,
-      content:
-        "Chris rescued our designed conservatory project from a no-go to a go-forward. From that point on Chris and his team achieved timeline goals. Chris’ communication about project progress was excellent as was his transparency concerning emerging difficulties.",
-    },
-    {
-      name: "Wesley So",
-      rating: 3,
-      content:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English.",
-    },
-    {
-      name: "Magnus Carlsen",
+      name: "Cindy Smith",
       rating: 5,
       content:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English.",
+        "I couldn't be happier with our conservatory Chris and his team built. Chris was a consumate professional from start to finish. He's extremely detail oriented, paying attention to the smallest details, doing what it takes to produce a quality product, updated me on progess every step of the way, and kept to his original estimate, unlike many contractors who hit you with extra costs after the fact. Our conservatory has the quality of a fine piece of furniture. I highly recommend Chris and his team.",
+    },
+    {
+      name: "Jonathan Bolton",
+      rating: 5,
+      content:
+        "I have been a conservatory owner since 1995.  My conservatory was built by the predecessor firm to Touchstone Conservatories.  My wife and I have been very pleased with the conservatory, and it has given us many years of enjoyment.  The wood that is the hallmark of this conservatory design, when combined with all glass walls and roof elements, makes for an impressive view from within the room and a striking addition to our residence.  The only maintenance that I have had over the years has been the replacement of a small number of insulated glass units. Chris and his team at Touchstone were able to help fix the insulated glass units and upgraded the wooden window sash so that they could be easily replaced in the future. While my room was not built by Chris and his team I have I have had contact with Chris, and have seen his work in the area. I recommend his company and know that he and his team have the abilities to produce a high quality conservatory.",
+    },
+    {
+      name: "Zack Combs",
+      rating: 5,
+      content:
+        "Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas malesuada efficitur maximus malesuada, penatibus ex erat potenti. Diam id risus varius ridiculus porta facilisis porta. Maximus mi ante litora, varius metus amet phasellus. Ad feugiat vivamus ultrices congue at sit vehicula.",
+    },
+    {
+      name: "John Doe",
+      rating: 5,
+      content:
+        "Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas malesuada efficitur maximus malesuada, penatibus ex erat potenti. Diam id risus varius ridiculus porta facilisis porta. Maximus mi ante litora, varius metus amet phasellus. Ad feugiat vivamus ultrices congue at sit vehicula.",
+    },
+    {
+      name: "Juan Dela Cruz",
+      rating: 5,
+      content:
+        "Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas malesuada efficitur maximus malesuada, penatibus ex erat potenti. Diam id risus varius ridiculus porta facilisis porta. Maximus mi ante litora, varius metus amet phasellus. Ad feugiat vivamus ultrices congue at sit vehicula.",
     },
   ];
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
-  };
-
-  useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
-    return () => clearInterval(timer);
-  }, []);
 
   const orderedItems = [
     ...carouselItems.slice(currentIndex),
@@ -106,15 +115,13 @@ export default function About() {
         <h1 className="text-black text-center text-4xl mb-5 font-semibold">
           What Our Customers Say
         </h1>
-        <div className="carousel-items flex overflow-x-hidden space-x-4 sm:space-x-8 justify-center">
+        <div className="carousel-items flex overflow-x-hidden space-x-4 sm:space-x-8 group">
           {orderedItems.map((item, index) => (
             <div
               key={index}
-              className={`carousel-item flex-shrink-0 w-full lg:w-1/3 p-4 transition-all duration-500 ease-in-out ${
-                index === 3 ? "hidden" : ""
-              }`}
+              className={`carousel-item flex-shrink-0 w-full lg:w-1/3 p-4 transition-all duration-500 ease-in-out `}
             >
-              <div className="card shadow-lg border-[0.5px] border-black rounded-lg overflow-hidden bg-[#D9D9D9] w-full">
+              <div className="card shadow-lg border-[0.5px] border-black rounded-lg overflow-hidden bg-[#D9D9D9] max-w-none animate-loop-scroll group-hover:paused">
                 <div className="flex justify-end items-end p-4">
                   <i className="fab fa-google text-2xl text-cyan-700" />
                 </div>
@@ -137,12 +144,19 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="card-body pl-8 text-gray-800 text-md leading-loose">
+                <div className="card-body pl-8 text-gray-800 text-md leading-loose overflow-auto max-h-96 text-justify indent-8">
                   {item.content}
                 </div>
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center my-5">
+          <button className="btn btn-md drop-shadow-lg text-sm mt-5 text-black bg-white uppercase px-10 border-transparent hover:border-transparent hover:bg-cyan-700 hover:text-white">
+            <a href="https://www.google.com/maps/place/Touchstone+Conservatories/@40.7636548,-74.7394157,14.96z/data=!4m8!3m7!1s0x89c39bb9774aafe3:0xdd29bab61cd627c!8m2!3d40.7636651!4d-74.7396734!9m1!1b1!16s%2Fg%2F11l6xt2r6s?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D">
+              View our reviews on Google
+            </a>
+          </button>
         </div>
       </section>
     </section>

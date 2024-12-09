@@ -1,23 +1,21 @@
 import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AppRoutes from "./Routes/AppRoutes";
 import "./App.css";
-import Header from "./Components/Header";
-import Home from "./Pages/Home";
-import Portfolio from "./Pages/Portfolio";
-import About from "./Pages/About";
-import FAQ from "./Pages/FAQ";
-import Footer from "./Components/footer";
-import Youtube from "./Pages/Youtube";
 
 function App() {
   return (
-    <div className="bg-white">
-      <Header />
-      <Home />
-      <About />
-      <Portfolio />
-      <Youtube />
-      <FAQ />
-      <Footer />
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          {AppRoutes.map((route, index) => {
+            const { element, path } = route; 
+            return (
+              <Route key={index} path={path} element={element} /> 
+            );
+          })}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

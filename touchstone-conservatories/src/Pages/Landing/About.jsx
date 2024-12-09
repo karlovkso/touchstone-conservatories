@@ -53,11 +53,11 @@ export default function About() {
   ];
 
   return (
-    <section id="About" className="py-28 bg-white text-black">
+    <section id="About" className="mt-20 bg-white text-black">
       <div className="About grid grid-cols-1 lg:grid-cols-2 gap-20 lg:items-start px-4 sm:px-8 lg:px-10">
         {/* Our Team Section */}
         <div className="flex-col grid items-center">
-          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-bold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             Our Team
           </div>
           <div className="text-md leading-loose text-center lg:text-left">
@@ -70,7 +70,7 @@ export default function About() {
 
         {/* What We Offer Section */}
         <div className="flex-col grid items-center">
-          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-bold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             What We Offer
           </div>
           <div className="text-md  leading-loose text-center lg:text-left">
@@ -84,7 +84,7 @@ export default function About() {
 
         {/* Transparency Section */}
         <div className="flex-col grid items-center">
-          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-bold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             Transparency
           </div>
           <div className="text-md  leading-loose text-center lg:text-left">
@@ -98,7 +98,7 @@ export default function About() {
 
         {/* Service Area Section */}
         <div className="flex-col grid items-center">
-          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-bold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             Service Area
           </div>
           <div className="text-md  leading-loose text-center lg:text-left">
@@ -111,8 +111,8 @@ export default function About() {
       </div>
 
       {/* What Our Customer Say*/}
-      <section className="py-20 mb-10">
-        <h1 className="text-black text-center text-4xl mb-5 font-semibold">
+      <section className="mt-20">
+        <h1 className="text-black text-center text-4xl mb-5 font-bold">
           What Our Customers Say
         </h1>
         <div className="carousel-items flex overflow-x-hidden space-x-4 sm:space-x-8 group">
@@ -152,11 +152,11 @@ export default function About() {
           ))}
         </div>
         <div className="flex justify-center my-5">
-          <button className="btn btn-md drop-shadow-lg text-sm mt-5 text-black bg-white uppercase px-10 border-transparent hover:border-transparent hover:bg-cyan-700 hover:text-white">
-            <a href="https://www.google.com/maps/place/Touchstone+Conservatories/@40.7636548,-74.7394157,14.96z/data=!4m8!3m7!1s0x89c39bb9774aafe3:0xdd29bab61cd627c!8m2!3d40.7636651!4d-74.7396734!9m1!1b1!16s%2Fg%2F11l6xt2r6s?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D">
+          <a href="https://www.google.com/maps/place/Touchstone+Conservatories/@40.7636548,-74.7394157,14.96z/data=!4m8!3m7!1s0x89c39bb9774aafe3:0xdd29bab61cd627c!8m2!3d40.7636651!4d-74.7396734!9m1!1b1!16s%2Fg%2F11l6xt2r6s?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D">
+            <button className="btn btn-md drop-shadow-lg text-sm mt-5 text-black bg-white uppercase px-10 border-transparent hover:border-transparent hover:bg-cyan-700 hover:text-white">
               View our reviews on Google
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
       </section>
     </section>

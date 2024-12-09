@@ -35,24 +35,24 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center">
-        <h1 className="text-4xl font-semibold mt-16">
+        <h1 className="text-4xl font-bold mt-16">
           Welcome to Touchstone Conservatories
         </h1>
         <p className="mt-10 px-20 max-w-full">
           We believe in creating more than just conservatories —{" "}
-          <span className="font-semibold">
+          <span className="font-bold">
             we build spaces that inspire connection, joy, and lifelong memories.
           </span>{" "}
           We understand that you're not just buying a conservatory; you're
           investing in a space to live in. That's why we design and innovate
           with people in mind,{" "}
-          <span className="font-semibold">
+          <span className="font-bold">
             every room we design is a reflection of our dedication to
             craftsmanship, sustainability, and innovation,
           </span>{" "}
           whether it's a sun room, conservatory, or pool enclosure.
         </p>
-        <h1 className="text-4xl font-semibold mt-10">Why Choose Us?</h1>
+        <h1 className="text-4xl font-bold mt-10">Why Choose Us?</h1>
       </div>
 
       {/* Cards */}

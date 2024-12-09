@@ -4,7 +4,8 @@ import Home from "./Home";
 import Portfolio from "./Portfolio";
 import About from "./About";
 import FAQ from "./FAQ";
-import Footer from "../../Components/Header";
+import Youtube from "./Youtube"
+import Footer from "../../Components/Footer";
 
 function Landing() {
   return (
@@ -13,6 +14,7 @@ function Landing() {
     <Home />
     <About />
     <Portfolio />
+    <Youtube/>
     <FAQ />
     <Footer />
   </div>

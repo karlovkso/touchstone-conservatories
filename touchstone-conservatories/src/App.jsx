@@ -6,6 +6,7 @@ import Portfolio from "./Pages/Portfolio";
 import About from "./Pages/About";
 import FAQ from "./Pages/FAQ";
 import Footer from "./Components/footer";
+import Youtube from "./Pages/Youtube";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <About />
       <Portfolio />
+      <Youtube />
       <FAQ />
       <Footer />
     </div>

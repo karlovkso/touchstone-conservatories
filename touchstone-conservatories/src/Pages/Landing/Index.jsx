@@ -1,24 +1,22 @@
-import React from 'react'
+import React from "react";
 import Header from "../../Components/Header";
 import Home from "./Home";
 import Portfolio from "./Portfolio";
 import About from "./About";
 import FAQ from "./FAQ";
-import Youtube from "./Youtube"
 import Footer from "../../Components/Footer";
 
 function Landing() {
   return (
     <div>
-    <Header />
-    <Home />
-    <About />
-    <Portfolio />
-    <Youtube/>
-    <FAQ />
-    <Footer />
-  </div>
-  )
+      <Header />
+      <Home />
+      <About />
+      <Portfolio />
+      <FAQ />
+      <Footer />
+    </div>
+  );
 }
 
-export default Landing
+export default Landing;

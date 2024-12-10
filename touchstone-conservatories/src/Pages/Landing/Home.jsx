@@ -26,10 +26,10 @@ export default function Home() {
               style to your life. Ready to create your dream space? Contact us
               today for a free consultation!
             </p>
-            <Link to='/CustomDesign'>
-            <button className="btn pl-10 pr-10 text-xs lg:text-sm mt-5 text-black bg-white uppercase border-transparent hover:border-transparent hover:bg-cyan-700 hover:text-white">
-              Get Free Design
-            </button>
+            <Link to="/CustomDesign">
+              <button className="btn pl-10 pr-10 text-xs lg:text-sm mt-5 text-black bg-white uppercase border-transparent hover:border-transparent hover:bg-cyan-700 hover:text-white">
+                Get Free Design
+              </button>
             </Link>
           </div>
         </div>

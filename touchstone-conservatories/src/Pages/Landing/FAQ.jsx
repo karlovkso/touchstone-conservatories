@@ -55,7 +55,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="FAQ" className="text-center text-black mb-20">
+    <section id="FAQ" className="text-center text-black mb-20 pt-12">
       <h1 className="text-cyan-700 text-center text-4xl mb-12 font-semibold">
         Frequently Asked Questions
       </h1>
@@ -64,7 +64,7 @@ export default function FAQ() {
           {faqItems.map((item, index) => (
             <div key={index} className="collapse collapse-arrow mt-4">
               <input type="checkbox" name="faq-accordion" />
-              <div className="collapse-title text-xl font-bold">
+              <div className="collapse-title text-xl font-semibold">
                 {item.question}
               </div>
               <div className="divider divider-neutral mx-4"></div>

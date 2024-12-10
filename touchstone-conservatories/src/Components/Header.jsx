@@ -56,8 +56,8 @@ function Header() {
                   offset={-100}
                   duration={500}
                   onClick={closeSidebar}
-                  className="hover:font-bold"
-                  activeClass="font-bold"
+                  className="hover:font-semibold"
+                  activeClass="font-semibold"
                 >
                   {item}
                 </Link>
@@ -124,8 +124,8 @@ function Header() {
                   offset={-100}
                   duration={500}
                   onClick={closeSidebar}
-                  className="hover:font-bold"
-                  activeClass="font-bold"
+                  className="hover:font-semibold"
+                  activeClass="font-semibold"
                 >
                   {item}
                 </Link>

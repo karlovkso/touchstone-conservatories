@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Google from "../../assets/google.svg";
 
 export default function About() {
   const [currentIndex] = useState(0);
@@ -53,11 +54,11 @@ export default function About() {
   ];
 
   return (
-    <section id="About" className="mt-20 bg-white text-black">
+    <section id="About" className="mt-16 bg-white text-black">
       <div className="About grid grid-cols-1 lg:grid-cols-2 gap-20 lg:items-start px-4 sm:px-8 lg:px-10">
         {/* Our Team Section */}
         <div className="flex-col grid items-center">
-          <div className="font-bold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             Our Team
           </div>
           <div className="text-md leading-loose text-center lg:text-left">
@@ -70,7 +71,7 @@ export default function About() {
 
         {/* What We Offer Section */}
         <div className="flex-col grid items-center">
-          <div className="font-bold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             What We Offer
           </div>
           <div className="text-md  leading-loose text-center lg:text-left">
@@ -84,7 +85,7 @@ export default function About() {
 
         {/* Transparency Section */}
         <div className="flex-col grid items-center">
-          <div className="font-bold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             Transparency
           </div>
           <div className="text-md  leading-loose text-center lg:text-left">
@@ -98,7 +99,7 @@ export default function About() {
 
         {/* Service Area Section */}
         <div className="flex-col grid items-center">
-          <div className="font-bold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             Service Area
           </div>
           <div className="text-md  leading-loose text-center lg:text-left">
@@ -111,8 +112,8 @@ export default function About() {
       </div>
 
       {/* What Our Customer Say*/}
-      <section className="mt-20">
-        <h1 className="text-black text-center text-4xl mb-5 font-bold">
+      <section className="mt-16">
+        <h1 className="text-black text-center text-4xl mb-5 font-semibold">
           What Our Customers Say
         </h1>
         <div className="carousel-items flex overflow-x-hidden space-x-4 sm:space-x-8 group">
@@ -123,7 +124,7 @@ export default function About() {
             >
               <div className="card shadow-lg border-[0.5px] border-black rounded-lg overflow-hidden bg-[#D9D9D9] max-w-none animate-loop-scroll group-hover:paused">
                 <div className="flex justify-end items-end p-4">
-                  <i className="fab fa-google text-2xl text-cyan-700" />
+                  <img src={Google} className="w-8 text-2xl text-cyan-700" />
                 </div>
 
                 <div className="flex flex-row pl-4 -mt-3 items-center space-x-3">
@@ -133,10 +134,10 @@ export default function About() {
                     </div>
                   </div>
                   <div className="-mt-5">
-                    <div className="text-xl font-bold text-black">
+                    <div className="text-xl font-semibold text-black">
                       {item.name}
                     </div>
-                    <div className="text-xl font-bold">
+                    <div className="text-xl font-semibold">
                       {[...Array(item.rating)].map((_, i) => (
                         <i key={i} className="fas fa-star text-yellow-500" />
                       ))}

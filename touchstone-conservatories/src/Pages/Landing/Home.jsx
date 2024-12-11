@@ -27,7 +27,7 @@ export default function Home() {
               today for a free consultation!
             </p>
             <Link to="/CustomDesign">
-              <button className="btn pl-10 pr-10 text-xs lg:text-sm mt-5 text-black bg-white uppercase border-transparent hover:border-transparent hover:bg-cyan-700 hover:text-white">
+              <button className="btn px-5 lg:px-10 text-xs lg:text-sm mt-5 text-black bg-white uppercase border-transparent hover:border-transparent hover:bg-cyan-700 hover:text-white">
                 Get Free Design
               </button>
             </Link>
@@ -35,10 +35,10 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center">
-        <h1 className="text-4xl font-semibold mt-16">
+        <h1 className="text-2xl lg:text-4xl font-semibold mt-16">
           Welcome to Touchstone Conservatories
         </h1>
-        <p className="mt-10 px-20 max-w-full">
+        <p className="text-base lg:text-lg mt-10 px-10 lg:px-20 max-w-full">
           We believe in creating more than just conservatories —{" "}
           <span className="font-semibold">
             we build spaces that inspire connection, joy, and lifelong memories.
@@ -52,7 +52,9 @@ export default function Home() {
           </span>{" "}
           whether it's a sun room, conservatory, or pool enclosure.
         </p>
-        <h1 className="text-4xl font-semibold mt-10">Why Choose Us?</h1>
+        <h1 className="text-2xl lg:text-4xl font-semibold mt-10">
+          Why Choose Us?
+        </h1>
       </div>
 
       {/* Cards */}
@@ -60,15 +62,15 @@ export default function Home() {
         <div className="flex flex-wrap gap-14 justify-center">
           <div className="card bg-white w-96 shadow-xl">
             <div className="justify-center flex">
-              <figure className="w-80">
+              <figure className="w-64 lg:w-80">
                 <img src={firstCard} alt="logo1" />
               </figure>
             </div>
             <div className="card-body pt-0">
-              <h1 className="card-title justify-center">
+              <h1 className="card-title justify-center text-lg lg:text-xl">
                 30+ Years Of Experience
               </h1>
-              <p className="pt-3">
+              <p className="pt-3 text-base lg:text-lg">
                 We bring decades of expertise to ensure your enclosure is built
                 to last.
               </p>
@@ -76,15 +78,15 @@ export default function Home() {
           </div>
           <div className="card bg-white w-96 shadow-xl">
             <div className="justify-center flex">
-              <figure className="w-80">
+              <figure className="w-64 lg:w-80">
                 <img src={secondCard} alt="logo2" />
               </figure>
             </div>
             <div className="card-body pt-0">
-              <h1 className="card-title justify-center">
+              <h1 className="card-title justify-center text-lg lg:text-xl">
                 We Offer Free Design
               </h1>
-              <p className="pt-3">
+              <p className="pt-3 text-base lg:text-lg">
                 We provide a no-cost, custom design consultation for qualified
                 customers to bring vision to life.
               </p>
@@ -92,13 +94,15 @@ export default function Home() {
           </div>
           <div className="card bg-white w-96 shadow-xl">
             <div className="justify-center flex">
-              <figure className="w-80">
+              <figure className="w-64 lg:w-80">
                 <img src={thirdCard} alt="logo3" />
               </figure>
             </div>
             <div className="card-body pt-0">
-              <h1 className="card-title justify-center">Competitive Pricing</h1>
-              <p className="pt-3">
+              <h1 className="card-title justify-center text-lg lg:text-xl">
+                Competitive Pricing
+              </h1>
+              <p className="pt-3 text-base lg:text-lg">
                 We offer top-quality enclosures at unbeatable rates, tailored to
                 your needs.
               </p>

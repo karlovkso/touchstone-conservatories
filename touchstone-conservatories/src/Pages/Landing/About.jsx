@@ -58,10 +58,10 @@ export default function About() {
       <div className="About grid grid-cols-1 lg:grid-cols-2 gap-20 lg:items-start px-4 sm:px-8 lg:px-10">
         {/* Our Team Section */}
         <div className="flex-col grid items-center">
-          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-semibold text-2xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             Our Team
           </div>
-          <div className="text-md leading-loose text-center lg:text-left">
+          <div className="text-base leading-loose text-center lg:text-left">
             Our team of highly-skilled shop craftsmen and experienced field
             carpenters is the heart of bringing your vision to life. Each member
             of our team is dedicated to precision, quality, and craftsmanship,
@@ -71,10 +71,10 @@ export default function About() {
 
         {/* What We Offer Section */}
         <div className="flex-col grid items-center">
-          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-semibold text-2xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             What We Offer
           </div>
-          <div className="text-md  leading-loose text-center lg:text-left">
+          <div className="text-base leading-loose text-center lg:text-left">
             We offer custom solutions that reflect your vision and lifestyle,
             ensuring every detail, from design to installation, is meticulously
             crafted with care. Our passion lies in building conservatories that
@@ -85,10 +85,10 @@ export default function About() {
 
         {/* Transparency Section */}
         <div className="flex-col grid items-center">
-          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-semibold text-2xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             Transparency
           </div>
-          <div className="text-md  leading-loose text-center lg:text-left">
+          <div className="text-base leading-loose text-center lg:text-left">
             We collaborate closely with our clients, infusing their unique
             vision into every corner of their space. With our passionate and
             creative team, we make the design process fun and enjoyable. Trust
@@ -99,10 +99,10 @@ export default function About() {
 
         {/* Service Area Section */}
         <div className="flex-col grid items-center">
-          <div className="font-semibold text-3xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
+          <div className="font-semibold text-2xl sm:text-4xl lg:text-4xl text-black mb-4 text-center lg:text-left">
             Service Area
           </div>
-          <div className="text-md  leading-loose text-center lg:text-left">
+          <div className="text-base lg:text-lg leading-loose text-center lg:text-left">
             Touchstone Conservatories primarily focuses on building within New
             Jersey, New York, and Pennsylvania. We have the ability to ship our
             modular kits nationwide for installation by local contracting
@@ -113,7 +113,7 @@ export default function About() {
 
       {/* What Our Customer Say*/}
       <section className="mt-16">
-        <h1 className="text-black text-center text-4xl mb-5 font-semibold">
+        <h1 className="text-black text-center text-2xl lg:text-4xl mb-5 font-semibold">
           What Our Customers Say
         </h1>
         <div className="carousel-items flex overflow-x-hidden space-x-4 sm:space-x-8 group">
@@ -127,17 +127,17 @@ export default function About() {
                   <img src={Google} className="w-8 text-2xl text-cyan-700" />
                 </div>
 
-                <div className="flex flex-row pl-4 -mt-3 items-center space-x-3">
+                <div className="flex flex-row pl-4 items-center space-x-3">
                   <div className="mr-3 -mt-4">
                     <div className="w-10 h-10 rounded-full p-7 border-black border-[1px] flex items-center justify-center text-white">
-                      <i className="fas fa-user text-3xl text-[#bb5062]" />
+                      <i className="fas fa-user text-2xl lg:text-3xl text-[#bb5062]" />
                     </div>
                   </div>
                   <div className="-mt-5">
-                    <div className="text-xl font-semibold text-black">
+                    <div className="text-base lg:text-xl font-semibold text-black">
                       {item.name}
                     </div>
-                    <div className="text-xl font-semibold">
+                    <div className="text-sm lg:text-xl font-semibold">
                       {[...Array(item.rating)].map((_, i) => (
                         <i key={i} className="fas fa-star text-yellow-500" />
                       ))}
@@ -145,7 +145,7 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="card-body pl-8 text-gray-800 text-md leading-loose overflow-auto max-h-96 text-justify indent-8">
+                <div className="pt-5 card-body pl-8 text-gray-800 text-sm lg:text-base leading-loose overflow-auto max-h-96 text-justify indent-8">
                   {item.content}
                 </div>
               </div>
@@ -153,8 +153,11 @@ export default function About() {
           ))}
         </div>
         <div className="flex justify-center my-5">
-          <a href="https://www.google.com/maps/place/Touchstone+Conservatories/@40.7636548,-74.7394157,14.96z/data=!4m8!3m7!1s0x89c39bb9774aafe3:0xdd29bab61cd627c!8m2!3d40.7636651!4d-74.7396734!9m1!1b1!16s%2Fg%2F11l6xt2r6s?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D">
-            <button className="btn btn-md drop-shadow-lg text-sm mt-5 text-black bg-white uppercase px-10 border-transparent hover:border-transparent hover:bg-cyan-700 hover:text-white">
+          <a
+            href="https://www.google.com/maps/place/Touchstone+Conservatories/@40.7636548,-74.7394157,14.96z/data=!4m8!3m7!1s0x89c39bb9774aafe3:0xdd29bab61cd627c!8m2!3d40.7636651!4d-74.7396734!9m1!1b1!16s%2Fg%2F11l6xt2r6s?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+          >
+            <button className="btn btn-sm lg:btn-md drop-shadow-lg text-xs lg:text-sm mt-5 text-black bg-white uppercase px-5 lg:px-10 border-transparent hover:border-transparent hover:bg-cyan-700 hover:text-white">
               View our reviews on Google
             </button>
           </a>

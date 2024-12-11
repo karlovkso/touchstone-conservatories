@@ -48,7 +48,7 @@ export default function Portfolio() {
 
   return (
     <div id="Portfolio" className="text-black text-center mt-16">
-      <h1 className="text-black text-4xl mb-5 font-semibold">
+      <h1 className="text-black text-2xl lg:text-4xl mb-5 font-semibold">
         Explore Our Custom Designs
       </h1>
 
@@ -118,7 +118,7 @@ export default function Portfolio() {
 
       <section className="flex items-center justify-center h-screen bg-white my-16">
         <iframe
-          className="w-full h-full"
+          className="min-w-full min-h-full"
           src="https://www.youtube.com/embed/1DKLCAGSWmQ"
           title="YouTube video player"
           frameBorder="0"

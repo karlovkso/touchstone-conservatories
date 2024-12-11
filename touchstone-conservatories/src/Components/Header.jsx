@@ -32,7 +32,10 @@ function Header() {
       }`}
     >
       <nav id="Header" className="navbar justify-between px-14 md:px-20">
-        <a href="/" className="logo w-52 md:w-64 lg:w-80">
+        <a
+          href="/touchstone-conservatories"
+          className="logo w-52 md:w-64 lg:w-80"
+        >
           <img
             src={logo}
             alt="logo"
